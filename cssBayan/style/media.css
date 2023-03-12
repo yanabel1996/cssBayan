@@ -1,0 +1,74 @@
+@media (max-width: 819px) {
+    .main-title {
+        font-size: 45px;
+    }
+
+    .accordion__main-title {
+        font-size: 38px;
+    }
+
+    .accordion__title {
+        font-size: 20px;
+    }
+
+    .footer__title {
+        font-size: 20px;
+    }
+
+    .footer__descr {
+        font-size: 16px;
+    }
+
+    .footer__social a {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 568px) {
+    .main-title {
+        font-size: 32px;
+    }
+
+    .hero__description {
+        font-size: 16px;
+    }
+
+    .accordion__item {
+        padding: 15px;
+    }
+
+    .accordion__item:first-child, .accordion__item:last-child {
+        padding: 20px 15px 15px;
+    }
+
+    .accordion__main-title {
+        font-size: 28px;
+    }
+
+    .accordion__title {
+        font-size: 16px;
+    }
+
+    .accrodion__list {
+        border-radius: 15px;
+    }
+
+    .accordion__input:checked~.accordion__content {
+        height: auto;
+        padding: 15px 15px 0;
+        background-color: #E6E8EC;
+    }
+
+    .accordion__input:checked~.accordion__title {
+        margin-left: -15px;
+        padding: 0 0 15px 15px;
+    }
+
+    .footer__container {
+        flex-direction: column;
+    }
+
+    .footer__top {
+        margin-bottom: 30px;
+    }
+}
