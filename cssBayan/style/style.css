@@ -82,6 +82,8 @@ a {
     stroke: #6D31EE;
 }
 
+
+
 .accordion__title:active .accordion__svg {
     stroke: #4F28A5;
 }
@@ -91,6 +93,9 @@ a {
 }
 
 .accordion__title:hover {
+    margin-left: -30px;
+    padding: 0 0 30px 30px;
+    border-bottom: 1px solid #c4c4c4;
     color: #6D31EE;
 }
 
@@ -119,7 +124,8 @@ a {
 .accordion__input:checked~.accordion__content {
     height: auto;
     padding: 30px 30px 0;
-    background-color: #E6E8EC;
+    background-color:#E6E8EC;
+
 }
 
 .accordion__input:checked~.accordion__title .accordion__svg {
@@ -134,7 +140,24 @@ a {
 
 .accordion__content img {
     width: 100%;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
 }
+
+.accordion__input:checked~.accordion__content  img {
+    opacity: 1;
+}
+
+.accordion__title:hover+.accordion__content {
+    height: auto;
+    padding: 30px 30px 0;
+    background-color: #E6E8EC;
+}
+
+.accordion__title:hover+.accordion__content  img {
+    opacity: 1;
+}
+
 
 /* footer */
 
